@@ -63,9 +63,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_29F1E32BB10E4FBDBAA9718B8BA63833 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_46A29544AD384C61ACA0EBCD1D7210A1 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_3C75C2A94E8F48789BC62E1F480573FC }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_9E9B71B2E9B94987B4532B0E1546B42A }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_D010FF37CA4F42DBBB3F83230535E4F4 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_E0FDDF36C6E74D69B045C5F0CE471361 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -73,6 +73,4 @@ jobs:
         with:
           app-name: 'udacitycms'
           slot-name: 'Production'
-
           
-
