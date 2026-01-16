@@ -125,8 +125,7 @@ def _save_cache(cache):
     pass
 
 def _build_msal_app(cache=None, authority=None):
-    return msal.ConfidentialClientApplication(Config.CLIENT_ID, authority=authority or Config.AUTHORITY,
-  client_credential=Config.CLIENT_SECRET, token_cache=cache)
+    return msal.ConfidentialClientApplication(Config.CLIENT_ID, authority=authority or Config.AUTHORITY, client_credential=Config.CLIENT_SECRET, token_cache=cache)
     # TODO: Return a ConfidentialClientApplication
     #return None
 
