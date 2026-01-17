@@ -3,6 +3,7 @@
 ### Analyze, choose, and justify the appropriate resource option for deploying the app.
 
 *For **both** a VM or App Service solution for the CMS app:*
+#####
 APP Service:
   13/month with B1 Basic includes storage and networking. costs are low. No VM or dedicate disks 
   App can scale between tiers B1 -> S1 -> P1v3, etc
